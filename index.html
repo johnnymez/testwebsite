@@ -3,10 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Website</title>
+    <title>EuroStandart</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: #333; color: white; padding: 15px; text-align: center; }
+        nav { background: #444; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; }
+        .container { width: 80%; margin: auto; padding: 20px; }
+        .gallery img { width: 100%; max-width: 300px; margin: 10px; }
+        .reviews { background: #f4f4f4; padding: 20px; }
+        .contact { padding: 20px; }
+        .contact-form input, .contact-form textarea { width: 100%; padding: 10px; margin: 10px 0; }
+        .contact-form button { padding: 10px; background: #333; color: white; border: none; cursor: pointer; }
+        footer { background: #333; color: white; text-align: center; padding: 10px; }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My GitHub Pages Website!</h1>
-    <p>This website is hosted using GitHub Pages.</p>
+    <header>
+        <h1>EuroStandart - Professional Tiling Services</h1>
+    </header>
+    <nav>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Customer Reviews</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="gallery">
+            <h2>Our Work</h2>
+            <div class="gallery">
+                <img src="tiling1.jpg" alt="Tiling example 1">
+                <img src="tiling2.jpg" alt="Tiling example 2">
+                <img src="tiling3.jpg" alt="Tiling example 3">
+            </div>
+        </section>
+        <section id="reviews" class="reviews">
+            <h2>Customer Reviews</h2>
+            <p>"EuroStandart transformed our bathroom beautifully!" - Jane D.</p>
+            <p>"Highly professional and great attention to detail!" - Mark S.</p>
+            <p>"Affordable and top-quality work. Would hire again!" - Emma W.</p>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>Email: info@eurostandart.com</p>
+            <p>Phone: +1 234 567 890</p>
+            <p>Serving the Dakota County Area for over 20 years!</p>
+            <h3>Send Us a Message</h3>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 EuroStandart. All rights reserved.</p>
+    </footer>
 </body>
 </html>
